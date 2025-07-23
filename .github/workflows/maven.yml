@@ -31,14 +31,13 @@ jobs:
         run: mvn clean install
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
-
-    with:
-      image: limasherzad/githupaction
-      tags: latest
-      registry: docker.io
-      dockerfile: Dockerfile
-      username: ${{ secrets.DOCKER_USERNAME }}
-      password: ${{ secrets.DOCKER_PASSWORD }}
+        with:
+          image: limasherzad/githupaction
+          tags: latest
+          registry: docker.io
+          dockerfile: Dockerfile
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
 
 
