@@ -39,27 +39,14 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-
-
-      #    - name: login to dockerhub
-      #      run: cmd
-      #    -  name: build a docker image
-      #       run: cmd
-
-
-
-
-      #login to your docker
-      #bulid a docker image
-      #pull the image to docker hup
-    needs:
-    permissions:
-    name:
-    uses:
-    strategy:
-    if:
-    secrets:
-    concurrency:
+#          needs:
+#          permissions:
+#          name:
+#          uses:
+#          strategy:
+#          if:
+#          secrets:
+#          concurrency:
 
 
 
